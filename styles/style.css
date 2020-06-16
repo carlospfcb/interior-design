@@ -1,9 +1,14 @@
+:root {
+    --main-bg-color: #f44336;
+
+  }
 html{
     box-sizing: border-box;
+    /* overflow: hidden; */
 }
 body{
-    background-color: #f2f2f2;
     font-family: 'Open Sans', sans-serif;
+    /* overflow: hidden; */
 }
 *,*:before, *:after{
         box-sizing: inherit;
@@ -19,3 +24,54 @@ body{
     content: " "; /* 1 */
     display: table; /* 2 */
 }
+/*general*/
+h1{
+    margin: 100px 20px 20px 0;
+}
+h2{
+    color: var(--main-bg-color);
+}
+h3{
+    color: #fff;
+    font-size: 1.6rem;
+}
+.right{
+    float: right;
+    width: 75%;
+}
+/*header*/
+header{
+    background-color: var(--main-bg-color);
+    width: 20%;
+    height: 100vh;
+    float: left;
+    position: fixed;
+}
+header h3{
+    margin: 100px 20px 50px 50px;
+}
+header ul{
+    margin: 0 20px 0 50px;
+}
+header nav ul li{
+    list-style-type: none;
+}
+header nav ul li a{
+    display: block;
+    text-decoration: none;
+    color: #fff;
+    padding: 8px 0;
+    font-weight: bold;
+    line-height: 1.5;
+}
+
+/*main*/
+main img{
+    width: 45%;
+}
+
+
+div.services{
+    clear: both;
+}
+
