@@ -117,3 +117,43 @@ div.services{
 .members img:hover{
     opacity: 0.6;
 }
+
+/* packages */
+.packages-detail{
+    width: 95%;
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+}
+.packages-detail .basic, .packages-detail .pro{
+    width: 50%;
+    list-style-type: none;
+}
+
+.packages-detail ul li:not(:first-child){
+    border-bottom: 1px solid #ddd;
+    text-align: center;
+    padding: 8px 16px;
+    font-size: 20px;
+    background-color: #f1f1f1!important;
+}
+
+.title-pro{
+    border-bottom: 1px solid #ddd;
+    text-align: center;
+    color: #fff;
+    background-color: #f44336;
+    padding-top: 32px;
+    padding-bottom: 32px;
+}
+.title-basic{
+    border-bottom: 1px solid #ddd;
+    text-align: center;
+    color: #fff;
+    background-color: #616161;
+    padding-top: 32px;
+    padding-bottom: 32px;
+}
+.basic{
+        margin-right: 15px;
+}
