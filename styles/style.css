@@ -40,7 +40,8 @@ h3{
 .right{
     float: right;
     width: 75%;
-    /* background-color: darkorchid; */
+    margin-bottom: 60px;
+    /* background-color: yellow; */
 }
 .stripe{
     color: var(--main-bg-color);
@@ -96,7 +97,7 @@ div.services{
 }
 
 /*Designers*/
-.listOfPlaces{
+.listOfMembers{
     width: 95%;
     background-color: white;
     display: flex;
@@ -105,19 +106,25 @@ div.services{
 }
 
 .members:not(:last-child){
-    padding-right: 15px;
+    margin-right: 15px;
 }
-
+.members{
+    background-color: #f1f1f1;
+}
 .members img{
     width: 100%;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center; 
-}
-.members img:hover{
-    opacity: 0.6;
+    margin-bottom: 0!important;
 }
 
+div.caption{
+    width: 100%;
+    margin: auto;
+    padding: 10px 15px  10px 15px;
+    
+}
 /* packages */
 .packages-detail{
     width: 95%;
@@ -135,7 +142,9 @@ div.services{
     text-align: center;
     padding: 8px 16px;
     font-size: 20px;
-    background-color: #f1f1f1!important;
+    background-color: #f1f1f1;
+    padding-top: 16px;
+    padding-bottom: 16px;
 }
 
 .title-pro{
