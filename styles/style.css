@@ -41,7 +41,6 @@ h3{
     float: right;
     width: 75%;
     margin-bottom: 60px;
-    /* background-color: yellow; */
 }
 .stripe{
     color: var(--main-bg-color);
@@ -57,6 +56,7 @@ h3{
 article{
     width: 95%;
     background-color: white;
+    text-align: justify;
 }
 /*header*/
 header{
@@ -89,6 +89,11 @@ header nav ul li a{
     width: 95%; 
     background-color: white;
 }
+.gallery .blocks{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
 main img{
     width: 49%;
 }
@@ -101,8 +106,9 @@ div.services{
     width: 95%;
     background-color: white;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     list-style-type: none;
+    margin-top: 15px;
 }
 
 .members:not(:last-child){
@@ -113,23 +119,22 @@ div.services{
 }
 .members img{
     width: 100%;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center center; 
-    margin-bottom: 0!important;
 }
 
 div.caption{
     width: 100%;
     margin: auto;
     padding: 10px 15px  10px 15px;
-    
 }
+.light, .left, .desc{
+    margin-bottom: 15px;
+}
+
 /* packages */
 .packages-detail{
     width: 95%;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     margin-top: 15px;
 }
 .packages-detail .basic, .packages-detail .pro{
@@ -165,4 +170,31 @@ div.caption{
 }
 .basic{
         margin-right: 15px;
+}
+.basic button, .pro button{
+    text-align: center;
+    width: 100px;
+    padding: 15px 10px;
+    border: none;
+    font-size: 1rem;
+    outline: none;
+}
+.basic button{
+    background-color: #fff;
+}
+.pro button{
+    color: #fff;
+    background-color: var(--main-bg-color);
+}
+.basic button:hover{
+    background-color: #000;
+    color: #fff;
+}
+.pro button:hover{
+    background-color: #000;
+}
+/*contact*/
+.contact form input{
+    display: block;
+    width: 95%;
 }
