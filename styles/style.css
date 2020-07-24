@@ -61,6 +61,7 @@ article{
     text-align: justify;
     font-family: "Poppins", sans-serif;
 }
+
 /*header*/
 header{
     background-color: var(--main-bg-color);
@@ -93,57 +94,83 @@ header nav ul li a{
     font-weight: bold;
     line-height: 1.5;
 }
-.showHeader{
-    display: block;
+
+.closeMenu{
+    width: 100%;
+    background-color: var(--main-bg-color);
+    outline: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+    font-size: 1.6rem;
+    font-family: "Poppins", sans-serif;
+    padding: 10px 5px;
+    display: none;
 }
+.closeMenu:hover{
+    background-color: #c5b0b0;
+    color: #000;
+    
+    
+}
+/*header responsive*/
+ div.header-responsive{
+    background-color: var(--main-bg-color);
+    width: 100%;
+    /* z-index: 1; */
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    height: 8vh;
+}
+ div .icon {
+    display: block;
+    list-style-type: none;
+    margin-left: 30px;
+  }
+  div.header-responsive h3{
+    margin: 10px 20px 5px 100px;
+} 
+.topnav a{
+    color: white;
+}
+.topnav .icon {
+  position: absolute;
+  left: 0;
+  top: 15px;
+}
+
+
 /*menu responsive*/
 @media screen and (max-width: 900px) {
-    header  nav{
+    header {
         display: none;
     }
     .right{
         width: 95%;
         margin-bottom: 60px;
     }
-    header{
-        background-color: var(--main-bg-color);
-        width: 100%;
-        height: 8vh;
-        z-index: 1;
-        display: flex;
-        justify-content: space-around;
-    }
-    header h3{
-        margin: 10px 20px 5px 10px;
-    }
-    .topnav .icon {
-      /* float: left; */
-      display: block;
-    }
+   
 }
 @media screen and (min-width: 900px) {
- .topnav .icon {
-    display: none;
-  }
+    .noShow{
+        display: none!important;
+}
+.show{
+    display: block;
+}
 }
 
   @media screen and (max-width: 900px) {
-    .topnav {
+    /* .topnav {
         position: relative;
-    }
-    .topnav a{
-        color: white;
-    }
-    .topnav .icon {
-      position: absolute;
-      left: 0;
-      top: 15px;
-    }
-    .topnav.responsive li {
+    } */
+   
+    /* .topnav.responsive li {
       float: none;
       display: block;
       text-align: left;
-    }
+    } */
   }
 
 /*main*/
@@ -185,6 +212,8 @@ main img:hover{
 }
 .members img{
     width: 100%;
+    /* filter: brightness(20%); */
+    filter: grayscale(80%);
 }
 
 div.caption{
@@ -244,6 +273,7 @@ div.caption{
     border: none;
     font-size: 1rem;
     outline: none;
+    cursor: pointer;
 }
 .basic button{
     background-color: #fff;
