@@ -7,15 +7,20 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="jquery/jquery-3.5.0.min.js"></script>
+    <script src="javascript/javascript.js"></script>
     <title>Document</title>
 </head>
 <body>
-    <header>
+    <div class="header-responsive noShow">
         <ul  id="myTopnav" class="topnav">
-            <li class="icon"><a href="#" onclick="myFunction()"><i class="fa fa-bars fa-2x"></i></a></li>
+            <li class="icon" id="icon"><a href="#"><i class="fa fa-bars fa-2x"></i></a></li>
         </ul>
         <h3><b>Company Name </b></h3>
-        <nav  id="nav">
+    </div>
+    <header id="header">
+        <button id="closeMenu" class="closeMenu">Close Menu</button>
+        <nav>
+            <h3><b>Company Name </b></h3>
             <ul>
                 <li><a href="#">Home</a></li>
                 <li><a href="#">Showcase</a></li>
@@ -140,6 +145,5 @@
             <input type="submit" value="Send Message">
         </form>
     </section>
-    <script src="javascript/javascript.js"></script>
 </body>
 </html>
