@@ -39,11 +39,7 @@ h3{
     font-size: 1.6rem;
     font-family: "Poppins", sans-serif;
 }
-.right{
-    float: right;
-    width: 75%;
-    margin-bottom: 60px;
-}
+
 .stripe{
     color: var(--main-bg-color);
     width: 50px;
@@ -61,7 +57,14 @@ article{
     text-align: justify;
     font-family: "Poppins", sans-serif;
 }
-
+@media screen and (min-width: 900px) {
+    .right{
+        float: right;
+        width: 75%;
+        margin-bottom: 60px;
+    }
+    
+    }
 /*header*/
 header{
     background-color: var(--main-bg-color);
@@ -117,11 +120,13 @@ header nav ul li a{
  div.header-responsive{
     background-color: var(--main-bg-color);
     width: 100%;
-    /* z-index: 1; */
+    z-index: 1;
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
     height: 8vh;
+    position: fixed;
+    top: 0; 
 }
  div .icon {
     display: block;
@@ -147,10 +152,28 @@ header nav ul li a{
         display: none;
     }
     .right{
-        width: 95%;
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+        margin: 0;
+        justify-content: center;
+        align-items: center;
         margin-bottom: 60px;
+        float: none; 
+        /* background-color: yellow; */
     }
-   
+    h1{
+        font-weight: bolder;
+        line-height: 1.5;
+        font-size: 45px;
+        font-family: "Poppins", sans-serif;
+        align-self: flex-start;
+        margin: 100px 10px 0 15px;
+    }
+    h2, .stripe{
+        align-self: flex-start;
+        margin: 20px 15px;
+    }
 }
 @media screen and (min-width: 900px) {
     .noShow{
@@ -177,9 +200,11 @@ header nav ul li a{
 .gallery{
     width: 95%; 
     background-color: white;
+    margin: 0;
 }
 .gallery .blocks{
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     margin-bottom: 10px;
 }
@@ -189,6 +214,20 @@ main img{
 }
 main img:hover{
     opacity: 1;
+}
+
+@media screen and (max-width: 600px) {
+    .gallery .blocks{
+        display: flex;
+        margin-bottom: 10px;
+        justify-content: center;
+        align-items: center;
+    }
+    main img{
+        width: 100%;
+        padding-bottom: 10px;
+    }
+    
 }
 /* div.services{
     clear: both;
@@ -224,7 +263,17 @@ div.caption{
 .light, .left, .desc{
     margin-bottom: 15px;
 }
-
+@media screen and (max-width: 600px){
+    .listOfMembers{
+        flex-direction: column;
+    }
+    .members{
+        margin-bottom: 15px;
+    }
+    .members:not(:last-child){
+        margin-right: 0;
+    }
+}
 /* packages */
 .packages-detail{
     width: 95%;
@@ -232,6 +281,7 @@ div.caption{
     justify-content: space-between;
     margin-top: 15px;
 }
+
 .packages-detail .basic, .packages-detail .pro{
     width: 50%;
     list-style-type: none;
@@ -289,6 +339,21 @@ div.caption{
 .pro button:hover{
     background-color: #000;
 }
+
+@media screen and (max-width: 600px){
+    .packages-detail{
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    .packages-detail .basic, .packages-detail .pro{
+        width: 100%;
+        margin-bottom: 15px;
+    }
+    .basic{
+        margin-right: 0;
+}
+}
 /*contact*/
 .contact form input{
     display: block;
@@ -308,10 +373,20 @@ div.caption{
     border: 1px solid  rgb(202, 199, 199);
 }
 
+@media screen and (max-width: 600px){
+    .contact form{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+    }
+    .contact form input{
+        width: 95%;
+        /* margin-bottom: 15px; */
+    }
+}
 /*
 Changes:
-1-hover menu Done
-2-Responsive menu
 3-Responsive gallery
 4-Responsive services
 5-Responsive Designer
